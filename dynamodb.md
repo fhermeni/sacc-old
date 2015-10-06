@@ -91,7 +91,7 @@ Amazon EC2 est le service d'hébergement de machines virtuelles de AWS. Nous all
 Il va falloir pouvoir générer un jar pour votre application qui contiendra toutes les dépendances. Le plugin assembly(http://maven.apache.org/plugins/maven-assembly-plugin) remplit très bien ce rôle.
 
 1. Configurez le plugin `assembly` puis générez votre fichier jar
-2. Copiez le par scp
+2. Copiez le par `scp`
 3. lancez le jar depuis la VM. Comme vos `credentials` sont en effet stockés uniquement sur votre machine normalement, ca plante. Corrigez le problème.
 
 
