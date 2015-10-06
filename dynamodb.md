@@ -73,3 +73,35 @@ Par défaut les query sont éventuellement consistantes, ce qui veut dire qu'il 
 1. un programme qui vérifie et affiche le prix d'un produit
 
 Essayez de mettre en valeur la consistance éventuelles en jouant sur les fréquences d'écriture et de lecture ainsi que le nombre de programes. Vous pourrez déployer votre code sur des instances EC2 pour observer l'influence de la latence.
+
+
+## Hébergement sur Amazon EC2
+
+Amazon EC2 est le service d'hébergement de machines virtuelles de AWS. Nous allons donc ici utilisez ce service pour créer, lancer une VM puis déployer notre application sur cette VM.
+
+### Préparation de la VM
+1. Sur la console AWS, lancez le service EC2
+2. Créez une instance et sélectionnner l'image (`AMI`) Amazon Linux AMI. Celle-ci est compatible avec le free-tier et sera donc gratuite
+        1. Conserver le type éligible au `free tier`
+        2. Passez les détails pour le moment, lancez l'instance (`Launch`) et faites une création de clef SSH au passage
+3. Sur le tableau de bord EC2, vous trouverez les informations nécessaire pour se connecter à la VM par SSH
+
+### Préparation de l'application
+
+Il va falloir pouvoir générer un jar pour votre application qui contiendra toutes les dépendances. Le plugin assembly(http://maven.apache.org/plugins/maven-assembly-plugin) remplit très bien ce rôle.
+
+1. Configurez le plugin `assembly` puis générez votre fichier jar
+2. Copiez le par scp
+3. lancez le jar depuis la VM. Comme vos `credentials` sont en effet stockés uniquement sur votre machine normalement, ca plante. Corrigez le problème.
+
+
+Vos `credentials` sont stockés en dur dans la VM fourni par Amazon. Sachant que ces credentials vous ont été fourni par Amazon, il serait plus pertinent de ne plus les stocker directement dans vos VMs pour une question de portabilité:
+
+1. Changez votre code pour utiliser un fournisseur de credential `InstanceProfileCredentialsProvider`.
+2. Créez un rôle IAM pour EC2 permettant d'accéder au service DynamoDB.
+3. Il n'est pas possible d'attacher un rôle IAM à une VM déjà instanciée. Terminez donc la VM en cours et créez en une nouvelle qui utilisera le rôle IAM défini précédemment.
+
+## Prochainement ...
+
+Pour le moment, nous ne faisons pas réellement de service Web. Nous passons par la couche IaaS de Amazon pour héberger notre application. Prochainement, nous passerons par Amazon Elastic Beanstalk pour travailler uniquement au niveau de la couche PaaS.
+
