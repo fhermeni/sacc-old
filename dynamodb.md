@@ -68,8 +68,8 @@ Un indexe secondaire permet de filtrer sur des attributs qui ne sont pas la clé
 ## Accès concurrent
 Par défaut les query sont éventuellement consistantes, ce qui veut dire qu'il est possible de ne pas obtenir la dernière valeur écrite. Nous allons essayer de mettre cela en valeur avec: 
 
-1.une table qui contient des produits ayant un productID et au moins un attribut prix 
-1.un programme qui modifie le prix (toujours incrémentalement) des produits
-1.un programme qui vérifie et affiche le prix d'un produit
+1. une table qui contient des produits ayant un productID et au moins un attribut prix 
+1. un programme qui modifie le prix (toujours incrémentalement) des produits
+1. un programme qui vérifie et affiche le prix d'un produit
 
 Essayez de mettre en valeur la consistance éventuelles en jouant sur les fréquences d'écriture et de lecture ainsi que le nombre de programes. Vous pourrez déployer votre code sur des instances EC2 pour observer l'influence de la latence.
