@@ -37,40 +37,48 @@ Installez le SDK eclipse
 
 ## Manipulation simple d’une table
 
-AWS fournit une interface Web pour gérer à la fois son compte mais aussi les services. Chaque service est exécuté dans une région, indiquée 
-en haut à droite de l'interface. Le choix de la région influe sur les performances mais aussi sur le coût. 
+AWS fournit une interface Web pour gérer à la fois son compte mais aussi les services. Chaque service est exécuté dans une région, indiquée
+en haut à droite de l'interface. Le choix de la région influe sur les performances mais aussi sur le coût.
 
 1. Quel est le coût d'instances DynamoDB en Europe et aux US ?
 
-Pour la suite, vous pourrez exécuter une instance dans n'importe quelle région. Nous allons simuler un site de commerce électronique. 
+Pour la suite, vous pourrez exécuter une instance dans n'importe quelle région. Nous allons simuler un site de commerce électronique.
 
-1. Créez une table DynamoDB dans l'interface Web, avec comme clé un Hash de type Number et comme nom `productID`. 
+1. Créez une table DynamoDB dans l'interface Web, avec comme clé un Hash de type Number et comme nom `productID`.
 2. Ecrivez un programme Java qui :
-  
+
   1. Charge vos credentials `ProfileCredentialsProvider`
   2. se connecte à DynamoDB `AmazonDynamoDBClient`
-  3. vérifie que votre table existe `Tables.doesTableExist`  
+  3. vérifie que votre table existe `Tables.doesTableExist`
 
 Nous allons maintenant remplir la table avec des éléments. Le principe consiste à créer un objet `Item`.
-lui fixer une clé primaire et des attributs (technique du _call chaining_), et finalement le mettre dans la table. 
+lui fixer une clé primaire et des attributs (technique du _call chaining_), et finalement le mettre dans la table.
 
 1. Ajoutez un produit représentant un livre avec au moins des attributs pour le titre, l'année de publication et le nombre de pages
-2. Ajoutez un produit de type DVD avec un titre, une année et une durée. 
-3. Vérifiez que les éléments ont bien été ajoutés grâce à la console AWS. 
+2. Ajoutez un produit de type DVD avec un titre, une année et une durée.
+3. Vérifiez que les éléments ont bien été ajoutés grâce à la console AWS.
 3. Effectuez deux `Query` en utilisant les productID et vérifiez que vous retrouvez les éléments ajoutés
-3. Faites un `Scan` pour récupérer l'ensemble des produits de votre table 
+3. Faites un `Scan` pour récupérer l'ensemble des produits de votre table
 
+
+## Capacités de lecture ou d'écriture
+
+À chaque table sont associées des capacités de lecture et d'écriture qui définissent le débit avec lequel peuvent être exécuté les opérations.
+
+1. Quelles sont les capacités par défaut pour votre table ?
+2. Écrivez une méthode qui permet d'ajouter des éléments dans la table sans interruption, et mesurez le débit effectif (nombre d'insertions/seconde). Est-ce que cela correspond à votre capacité d'écriture ?
+3. Une opération de lecture consomme moins de resources quand elle n'est pas consistente. En effectuant le même type d'opération que précédemment, mesurez le débit effectif en lecture consistente et non consistente. Que constatez vous ?
 
 ## Indexe secondaire
 
-Un indexe secondaire permet de filtrer sur des attributs qui ne sont pas la clé primaire. Recréez  votre table pour y ajouter uné clé secondaire sur les titres, et faites des query sur le titre. 
+Un indexe secondaire permet de filtrer sur des attributs qui ne sont pas la clé primaire. Recréez  votre table pour y ajouter uné clé secondaire sur les titres, et faites des query sur le titre.
 
 ## Accès concurrent
-Par défaut les query sont éventuellement consistantes, ce qui veut dire qu'il est possible de ne pas obtenir la dernière valeur écrite. Nous allons essayer de mettre cela en valeur avec: 
+Par défaut les query sont éventuellement consistantes, ce qui veut dire qu'il est possible de ne pas obtenir la dernière valeur écrite. Nous allons essayer de mettre cela en valeur avec:
 
-1. une table qui contient des produits ayant un productID et au moins un attribut prix 
-1. un programme qui modifie le prix (toujours incrémentalement) des produits
-1. un programme qui vérifie et affiche le prix d'un produit
+1. une table qui contient des produits ayant un productID et au moins un attribut prix
+2. un programme qui modifie le prix (toujours incrémentalement) des produits
+3. un programme qui vérifie et affiche le prix d'un produit
 
 Essayez de mettre en valeur la consistance éventuelles en jouant sur les fréquences d'écriture et de lecture ainsi que le nombre de programes. Vous pourrez déployer votre code sur des instances EC2 pour observer l'influence de la latence.
 
