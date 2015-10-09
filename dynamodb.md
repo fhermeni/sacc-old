@@ -7,7 +7,7 @@ _Attention à bien supprimer vos tables, arrêter vos instances EC2... à la fin
 ## Préparation du compte
 
 1. Connectez-vous à votre console AWS: http://aws.amazon.com/fr/console/
-2. Créez un nouvel utilisateur (rubrique Users) et créez lui une _AccessKey_ avec la politique _AmazonDynamoDBFullAccess_
+2. Créez un nouvel utilisateur dédié à DynamoDB: Cliquez sur votre nom en haut à droite, item "Security & Credential", rubrique Users et créez lui une _AccessKey_ avec la politique _AmazonDynamoDBFullAccess_
 
 ## Préparation de l'environnement
 
