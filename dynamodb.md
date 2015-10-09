@@ -1,6 +1,6 @@
 # Utilisation de DynamoDB
 
-La documentation pour DynamoDB est visible ici : http://docs.aws. amazon.com/amazondynamodb/latest/developerguide/Introduction.html
+La documentation pour DynamoDB est visible ici : http://docs.aws.amazon.com/amazondynamodb/latest/developerguide/Introduction.html
 
 _Attention à bien supprimer vos tables, arrêter vos instances EC2... à la fin du TP_
 
