@@ -3,7 +3,7 @@
 ## Objective
 Each 2 person team must choose one of the following paper and presents it in front of the class for 10 minutes maximum. Slides must be in PDF format.
 
-The doodle to state your choice:  http://doodle.com/a95rpivdmrirt98t
+The doodle to state your choice:  TDA
 
 A possible outline:
 - authors, affiliation, conference/journal ?
@@ -14,6 +14,14 @@ A possible outline:
 
 ## The papers
 
+1. Existential Consistency: Measuring and Understanding Consistency at Facebook
+  - PDF: http://sigops.org/sosp/sosp15/current/2015-Monterey/printable/240-lu.pdf
+  
+1. Centiman: Elastic, High Performance Optimistic Concurrency Control by Watermarking 
+  - PDF: http://dl.acm.org/authorize?N91354
+  
+
+ARCHIVE:
 1. An analysis of Facebook photo caching
   - abstract & PDF: http://dl.acm.org/citation.cfm?id=2522722 
   
