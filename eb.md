@@ -44,7 +44,10 @@ $ mvn package
 $ eb deploy
 $ open http://eblab-dev.elasticbeanstalk.com/webapi/myresource
 ```
-
+- to save the configuration and ease portability:
+```
+$ eb config save
+```
 
 ## Resources
 
