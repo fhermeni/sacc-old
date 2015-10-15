@@ -47,5 +47,7 @@ $ open http://eblab-dev.elasticbeanstalk.com/webapi/myresource
 
 
 ## Resources
+
 - How does Elastic BeanStalk work: http://docs.aws.amazon.com/elasticbeanstalk/latest/dg/concepts.html
-- 
+
+ 
