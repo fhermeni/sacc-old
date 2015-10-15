@@ -49,5 +49,7 @@ $ open http://eblab-dev.elasticbeanstalk.com/webapi/myresource
 ## Resources
 
 - How does Elastic BeanStalk work: http://docs.aws.amazon.com/elasticbeanstalk/latest/dg/concepts.html
-
+- Enhanced Health Reporting and Monitoring: http://docs.aws.amazon.com/elasticbeanstalk/latest/dg/health-enhanced.html
+- Creating role to delegate permissions to an AWS service: http://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_create_for-service.html
+- Google your error messages
  
