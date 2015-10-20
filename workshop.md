@@ -44,7 +44,8 @@ Here is the paper assignment based on your wishes
 1. Centiman: elastic, high performance optimistic concurrency control by watermarking. SOCC 15
   - Tianhao SHI
   - Camille BOINAUD
-
+  - Jonathan Pujol
+  - 
 1. **Hors sujet** Software Defined Batteries. SOSP 15
   - Benjamin Benni
   - Loic Gaillard
@@ -57,8 +58,7 @@ Here is the paper assignment based on your wishes
 
 1. **Hors sujet** Selectively Taming Background Android Apps to Improve Battery Lifetime. ATC 15 
   - Sonia Tual
-  - Jonathan Pujol
-
+  
 1. Database High Availability Using SHADOW Systems. SOCC15
   - Ludovic, Cuny
   - Louis, Pennachio
