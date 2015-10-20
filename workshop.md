@@ -51,9 +51,6 @@ Here is the paper assignment based on your wishes
   - Mahmoud Diallo
   - Hamza Magroun 
 
-1. **Hors sujet** Selectively Taming Background Android Apps to Improve Battery Lifetime. ATC 15 
-  - Sonia Tual
-  
 1. Database High Availability Using SHADOW Systems. SOCC15
   - Ludovic, Cuny
   - Louis, Pennachio
@@ -76,7 +73,8 @@ Here is the paper assignment based on your wishes
 
 1. Microsoft azure SQL database telemetry. SOCC 15
   - Guillaume, Dalichamp
-  - Florian, Rouyer
+  - Florian Rouyer
+  - Sonia Tual
 
 
 
