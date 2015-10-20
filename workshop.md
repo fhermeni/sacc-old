@@ -3,31 +3,26 @@
 Here is the paper assignment based on your wishes
 
 1. Yesquel: Scalable SQL storage for Web applications. SOSP 2015
-   
   - Karim, Gawish
   - Ghassan, Naouis
   - Lobo, Rakotoarinoro
 
 1. LAMA: Optimized Locality-aware Memory Allocation for Key-value Cache. Usenix ATC 2015
-
   - Quan Sun
   - Tom Veniat
   - Youssef Salim
 
 1. Building Consistent Transactions with Inconsistent Replication. SOSP 15
-  
   - Laureen, Ginier
   - Mael, Audren de kerdrel
-  -  Sébastien, Pétillon
+  - Sébastien, Pétillon
   
 1. dJay: Enabling High-density Multi-tenancy for Cloud Gaming Servers with dynamic Cost-Benefit GPU Load Balancing
- 
   - Etienne Vivien
   - Kevin Varandas
   - Sébastien Grégoire
 
 1. The nearest replica can be farther than you think. Socc 15
-
   - Romain, Palmero
   - Pierre, Christensen
   - Max, Destors
@@ -45,7 +40,7 @@ Here is the paper assignment based on your wishes
   - Tianhao SHI
   - Camille BOINAUD
   - Jonathan Pujol
-  - 
+  
 1. **Hors sujet** Software Defined Batteries. SOSP 15
   - Benjamin Benni
   - Loic Gaillard
