@@ -45,7 +45,7 @@ Here is the paper assignment based on your wishes
   - Tianhao SHI
   - Camille BOINAUD
 
-1. *Hors sujet* Software Defined Batteries. SOSP 15
+1. **Hors sujet** Software Defined Batteries. SOSP 15
   - Benjamin Benni
   - Loic Gaillard
   - Tom Guillermin
@@ -55,7 +55,7 @@ Here is the paper assignment based on your wishes
   - Mahmoud Diallo
   - Hamza Magroun 
 
-1. *Hors sujet* Selectively Taming Background Android Apps to Improve Battery Lifetime. ATC 15 
+1. **Hors sujet** Selectively Taming Background Android Apps to Improve Battery Lifetime. ATC 15 
   - Sonia Tual
   - Jonathan Pujol
 
@@ -74,7 +74,7 @@ Here is the paper assignment based on your wishes
  - Pierre LECA
  - Clément FORNERIS
 
-1. ???
+1. **???**
   - Etienne Vivien
   - Kevin Varandas
   - Sébastien Grégoire
