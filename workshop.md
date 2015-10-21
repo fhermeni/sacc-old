@@ -66,11 +66,6 @@ Here is the paper assignment based on your wishes
  - Pierre LECA
  - Clément FORNERIS
 
-1. **???**
-  - Etienne Vivien
-  - Kevin Varandas
-  - Sébastien Grégoire
-
 1. Microsoft azure SQL database telemetry. SOCC 15
   - Guillaume, Dalichamp
   - Florian Rouyer
