@@ -41,7 +41,7 @@ Here is the paper assignment based on your wishes
   - Camille BOINAUD
   - Jonathan Pujol
   
-1. **Hors sujet** Software Defined Batteries. SOSP 15
+1. No compromises: distributed transactions with consistency, availability, and performance. SOSP 15
   - Benjamin Benni
   - Loic Gaillard
   - Tom Guillermin
