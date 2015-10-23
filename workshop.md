@@ -80,6 +80,7 @@ Wrokshop day: 6 novembre
 1. Vuvuzela: Scalable Private Messaging Resistant to Traffic Analysis. SOSP 15
   - Jomaa Farouk
   - Guizani Mounir
+  - Nivot Stéphane
 
 
 
