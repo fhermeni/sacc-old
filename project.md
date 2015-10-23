@@ -43,8 +43,10 @@ L'application est développée pour un hébergement sur le cloud de Amazon au tr
 
 ### Par mail
  	
- 	- un lien vers le dépôt GIT permettant de récupérer la branche `master` à la deadline.
-
+ - un lien vers le dépôt GIT permettant de récupérer la branche `master` à la deadline.
+	- mon identifiant github: fhermeni
+	- mon identifiant bitbucket: fhermeni
+	
 ### Dans le repository
 	
  - un fichier README.md contenant
