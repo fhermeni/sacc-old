@@ -1,8 +1,12 @@
 # SACC Workshop
 
-Jour pour les présentation: 6 novembre
+Wrokshop day: 6 novembre
 
-Here is the paper assignment based on your wishes
+## How-to read a scientific paper:
+
+- http://www.sciencebuddies.org/science-fair-projects/top_science-fair_how_to_read_a_scientific_paper.shtml
+
+## Assignements
 
 1. Yesquel: Scalable SQL storage for Web applications. SOSP 2015
   - Karim, Gawish
