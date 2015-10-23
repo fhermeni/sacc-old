@@ -1,5 +1,7 @@
 # SACC Workshop
 
+Jour pour les présentation: 6 novembre
+
 Here is the paper assignment based on your wishes
 
 1. Yesquel: Scalable SQL storage for Web applications. SOSP 2015
