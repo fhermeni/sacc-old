@@ -28,7 +28,7 @@ L'application est développée pour un hébergement sur le cloud de Amazon au tr
 
  - **tweet propagation**: tracer l'évolution du nombre de retweets pour un tweet donné, dans le temps ou géographiquement
 
- - **retweet bo **: Donner des statistiques sur le nombre de retweets par utilisateur.
+ - **retweet bot**: Donner des statistiques sur le nombre de retweets par utilisateur.
 
 
 ## Environnement de travail
