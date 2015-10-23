@@ -53,18 +53,19 @@ L'application est développée pour un hébergement sur le cloud de Amazon au tr
  	- un lien vers un document google doc résumant le travail réalisé
  	- un manuel décrivant comment déployer l'application _from scratch_
  	- un accès au dashboard de l'application sur AWS de manière à observer la configuration, les règles d'élasticité
- 	- un code source qui compile
- 	- les moyens pour déployer l'application et la tester (incluant le test de passage à l'échelle) 		
+   - un code source qui compile
+   - les moyens pour déployer l'application et la tester (incluant le test de passage à l'échelle) 	 	
  		
 
 ### Dans le google doc
-	- une description du travail réalisé/non réalisé avec l'affectation des tâches
-	- une description justifiée de l'architecture de l'application (est-elle tolérante au pannes, auto-élastique, ...)
-	- une description de l'API REST mise à disposition des clients
-	- les types d'analyse supportées
-	- un modèle de coût pour l'application: combien coûte l'application par mois en fonction de différents facteurs
-	- des points notables concernant l'implantation, le protocole de test de charge		  		  
-	- un retour sur votre vision du projet et du module en général
+  
+  - une description du travail réalisé/non réalisé avec l'affectation des tâches
+  - une description justifiée de l'architecture de l'application (est-elle tolérante au pannes, auto-élastique, ...)
+  - une description de l'API REST mise à disposition des clients
+  - les types d'analyse supportées
+  - un modèle de coût pour l'application: combien coûte l'application par mois en fonction de différents facteurs
+  - des points notables concernant l'implantation, le protocole de test de charge		  		  
+  - un retour sur votre vision du projet et du module en général
 
 ## Resources
 
