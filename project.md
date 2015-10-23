@@ -26,9 +26,9 @@ L'application est développée pour un hébergement sur le cloud de Amazon au tr
 
  - **watchdog**: tracer la fréquence d'utilisation d'un hashtag, une fois qu'une condition est satisfaite (hashtag ou auteur particulier par exemple)
 
- - ** tweet propagation **: tracer l'évolution du nombre de retweets pour un tweet donné, dans le temps ou géographiquement
+ - **tweet propagation**: tracer l'évolution du nombre de retweets pour un tweet donné, dans le temps ou géographiquement
 
- - ** retweet bot **: Donner des statistiques sur le nombre de retweets par utilisateur.
+ - **retweet bo **: Donner des statistiques sur le nombre de retweets par utilisateur.
 
 
 ## Environnement de travail
