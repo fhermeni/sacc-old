@@ -47,12 +47,12 @@ L'application est développée pour un hébergement sur le cloud de Amazon au tr
 
 ### Dans le repository
 	
-	- un fichier README.md contenant
- 		- le nom des membres de l'équipe
- 		- l'URL où l'application est déployée et testable
- 		- un lien vers un document google doc résumant le travail réalisé
- 		- un manuel décrivant comment déployer l'application _from scratch_
- 		- un accès au dashboard de l'application sur AWS de manière à observer la configuration, les règles d'élasticité
+ - un fichier README.md contenant
+   - le nom des membres de l'équipe
+   - l'URL où l'application est déployée et testable
+ 	- un lien vers un document google doc résumant le travail réalisé
+ 	- un manuel décrivant comment déployer l'application _from scratch_
+ 	- un accès au dashboard de l'application sur AWS de manière à observer la configuration, les règles d'élasticité
  	- un code source qui compile
  	- les moyens pour déployer l'application et la tester (incluant le test de passage à l'échelle) 		
  		
