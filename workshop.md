@@ -72,6 +72,10 @@ Here is the paper assignment based on your wishes
   - Guillaume, Dalichamp
   - Florian Rouyer
   - Sonia Tual
+  - 
+1. Vuvuzela: Scalable Private Messaging Resistant to Traffic Analysis. SOSP 15
+  - Jomaa Farouk
+  - Guizani Mounir
 
 
 
