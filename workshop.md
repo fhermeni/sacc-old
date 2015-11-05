@@ -8,7 +8,7 @@ Wrokshop day: 6 novembre
 
 ## Assignements
 
-1. Yesquel: Scalable SQL storage for Web applications. SOSP 2015
+1. Yesquel: Scalable SQL storage for Web applications. SOSP 2015 (pdf|workshop/yequel.pdf)
   - Karim, Gawish
   - Ghassan, Naouis
   - Lobo, Rakotoarinoro
