@@ -4,7 +4,7 @@ Une application cloud native permettant d'exécuter régulièrement des analyses
 L'application est développée pour un hébergement sur le cloud de Amazon au travers de `Amazon Elastic Beanstalk`. 
 
 - 4 personnes par groupe
-- **deadline**: samedi 14 novembre, 20h30
+- **deadline**: samedi 21 novembre, 20h30
 
 ## Fonctionnalités
 
