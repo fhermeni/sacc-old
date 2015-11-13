@@ -49,6 +49,67 @@ $ open http://eblab-dev.elasticbeanstalk.com/webapi/myresource
 $ eb config save
 ```
 
+## HeathCheck support
+
+By default, eb signals the role you provide cannot be assumed by elastic beanstalk. So the healthCheck does not work and you are sad.
+
+To have a role that can be assumed by Elastic Beanstalk. Add the following inside the statements of the role trust relationships:
+```
+{
+      "Sid": "",
+      "Effect": "Allow",
+      "Principal": {
+        "Service": "elasticbeanstalk.amazonaws.com"
+      },
+      "Action": "sts:AssumeRole"
+}
+````
+2 examples:
+```
+{
+  "Version": "2012-10-17",
+  "Statement": [
+    {
+      "Sid": "",
+      "Effect": "Allow",
+      "Principal": {
+        "Service": "ec2.amazonaws.com"
+      },
+      "Action": "sts:AssumeRole"
+    },
+    {
+      "Sid": "",
+      "Effect": "Allow",
+      "Principal": {
+        "Service": "elasticbeanstalk.amazonaws.com"
+      },
+      "Action": "sts:AssumeRole"
+    }
+  ]
+}
+````
+```
+{
+  "Version": "2012-10-17",
+  "Statement": [
+    {
+      "Sid": "",
+      "Effect": "Allow",
+      "Principal": {
+        "Service": "elasticbeanstalk.amazonaws.com"
+      },
+      "Action": "sts:AssumeRole",
+      "Condition": {
+        "StringEquals": {
+          "sts:ExternalId": "elasticbeanstalk"
+        }
+      }
+    }
+  ]
+}
+```
+
+Once yo have that, inside the health check configuration, the service role will be available
 ## Resources
 
 - How does Elastic BeanStalk work: http://docs.aws.amazon.com/elasticbeanstalk/latest/dg/concepts.html
