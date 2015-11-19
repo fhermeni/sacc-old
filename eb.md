@@ -64,7 +64,7 @@ To have a role that can be assumed by Elastic Beanstalk. Add the following insid
       "Action": "sts:AssumeRole"
 }
 ````
-2 examples:
+Example:
 ```
 {
   "Version": "2012-10-17",
@@ -84,26 +84,6 @@ To have a role that can be assumed by Elastic Beanstalk. Add the following insid
         "Service": "elasticbeanstalk.amazonaws.com"
       },
       "Action": "sts:AssumeRole"
-    }
-  ]
-}
-````
-```
-{
-  "Version": "2012-10-17",
-  "Statement": [
-    {
-      "Sid": "",
-      "Effect": "Allow",
-      "Principal": {
-        "Service": "elasticbeanstalk.amazonaws.com"
-      },
-      "Action": "sts:AssumeRole",
-      "Condition": {
-        "StringEquals": {
-          "sts:ExternalId": "elasticbeanstalk"
-        }
-      }
     }
   ]
 }
